@@ -20,10 +20,6 @@ const jsLoaders = () => {
       }
     }
   ]
-  if (isDev) {
-    loaders.push('eslint-loader')
-  }
-
   return loaders;
 }
 
@@ -69,7 +65,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: fileName('css')
     }),
-    // new ESLintPlugin(options)
   ],
   module: {
     rules: [
