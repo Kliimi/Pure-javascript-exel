@@ -20,7 +20,6 @@ const jsLoaders = () => {
       },
     },
   ];
-
   return loaders;
 };
 
@@ -67,7 +66,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: fileName("css"),
     }),
-    // new ESLintPlugin(options)
   ],
   module: {
     rules: [
